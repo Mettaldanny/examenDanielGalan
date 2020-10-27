@@ -13,12 +13,13 @@
                     <TableRoot>
                         <TableSection Title="Registro">
                             <EntryCell Label="Usuario Conectado" x:Name="BoxUsuario"></EntryCell>
-                            <EntryCell Label="Nombre" x:Name="BoxNombre"></EntryCell>                            
+                            <EntryCell Label="Nombre" x:Name="BoxNombre"></EntryCell>
                             <EntryCell Label="Total a pagar" x:Name="BoxTotal"></EntryCell>
 
                         </TableSection>
                     </TableRoot>
                 </TableView>
             </StackLayout>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

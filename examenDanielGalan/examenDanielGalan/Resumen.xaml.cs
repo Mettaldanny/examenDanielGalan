@@ -12,9 +12,15 @@ namespace examenDanielGalan
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Resumen : ContentPage
     {
-        public Resumen()
-        {
+        public Resumen(string user, string nombre, double pago)
+        {            
             InitializeComponent();
+            string usuario = BoxUsuario.ToString();
+            BoxUsuario.Text = user;
+            string nombreUsuario = BoxNombre.ToString();
+            BoxNombre.Text = nombre;
+            string cuota = BoxTotal.ToString();
+            BoxTotal.Text = pago.ToString(); ;
         }
     }
 }

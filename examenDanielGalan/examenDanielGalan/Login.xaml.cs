@@ -25,7 +25,8 @@ namespace examenDanielGalan
 
             if (user.Equals("estudiante2020") && pass.Equals("uisrael2020"))
             {
-                await Navigation.PushAsync(new Registro(user, pass));
+                await Navigation.PushAsync(new Registro(user));
+                
             }
             else
             {

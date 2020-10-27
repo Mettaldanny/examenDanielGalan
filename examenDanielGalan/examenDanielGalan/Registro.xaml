@@ -7,14 +7,14 @@
              x:Class="examenDanielGalan.Registro">
     <ContentPage.Content>
         <StackLayout>
-
+            <Label Text="Usuario conectado: "  x:Name="lblUser" TextColor="Green" FontSize="15"/>
             <StackLayout>
                 <TableView Intent="Form">
                     <TableRoot>
                         <TableSection Title="Registro">
                             <EntryCell Label="Nombre" x:Name="BoxUsuario"></EntryCell>
                             <EntryCell Label="Monto Inicial" x:Name="BoxMonto"></EntryCell>
-                            <EntryCell Label="Pago Mensual" x:Name="BoxPago"></EntryCell>
+                            <TextCell Text="Pago Mensual" x:Name="BoxPago"></TextCell>
 
                         </TableSection>
                     </TableRoot>
