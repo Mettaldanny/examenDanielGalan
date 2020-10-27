@@ -7,6 +7,9 @@
              x:Class="examenDanielGalan.MainPage">
 
     <StackLayout>
+
+        <Image Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGOUISRAEL-768x209.png" WidthRequest="30" HeightRequest="30"/>
+
         <Entry x:Name="txtUser"
                Placeholder="Ingrese el usuario">
 

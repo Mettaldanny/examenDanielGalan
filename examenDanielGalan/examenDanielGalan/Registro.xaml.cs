@@ -16,5 +16,12 @@ namespace examenDanielGalan
         {
             InitializeComponent();
         }
+
+        private async void btnPago_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Resumen());
+            DisplayAlert("Informacion", "Elemento guardado con exito", "OK");
+
+        }
     }
 }

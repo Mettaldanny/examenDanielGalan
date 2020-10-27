@@ -7,7 +7,25 @@
              x:Class="examenDanielGalan.Registro">
     <ContentPage.Content>
         <StackLayout>
-            
+
+            <StackLayout>
+                <TableView Intent="Form">
+                    <TableRoot>
+                        <TableSection Title="Registro">
+                            <EntryCell Label="Nombre" x:Name="BoxUsuario"></EntryCell>
+                            <EntryCell Label="Monto Inicial" x:Name="BoxMonto"></EntryCell>
+                            <EntryCell Label="Pago Mensual" x:Name="BoxPago"></EntryCell>
+
+                        </TableSection>
+                    </TableRoot>
+                </TableView>
+            </StackLayout>
+
+            <Button x:Name="btnPago"
+                Text="Pago"
+                Clicked="btnPago_Clicked">
+            </Button>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -7,9 +7,18 @@
              x:Class="examenDanielGalan.Resumen">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+
+            <StackLayout>
+                <TableView Intent="Form">
+                    <TableRoot>
+                        <TableSection Title="Registro">
+                            <EntryCell Label="Usuario Conectado" x:Name="BoxUsuario"></EntryCell>
+                            <EntryCell Label="Nombre" x:Name="BoxNombre"></EntryCell>                            
+                            <EntryCell Label="Total a pagar" x:Name="BoxTotal"></EntryCell>
+
+                        </TableSection>
+                    </TableRoot>
+                </TableView>
+            </StackLayout>
     </ContentPage.Content>
 </ContentPage>
