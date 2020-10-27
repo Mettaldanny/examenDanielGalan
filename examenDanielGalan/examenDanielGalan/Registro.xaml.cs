@@ -15,8 +15,10 @@ namespace examenDanielGalan
         public Registro(string user)
         {
             InitializeComponent();
-            
-            
+            string usuario = lblUser.Text;
+            lblUser.Text = user;
+
+
         }
 
         private async void btnPago_Clicked(object sender, EventArgs e)
@@ -24,10 +26,12 @@ namespace examenDanielGalan
             string usuario = lblUser.Text;
 
             string nombre = BoxUsuario.Text;
-            
-            double cuota = 1800 - Convert.ToDouble(BoxMonto.Text);
 
-            double mensual = cuota / 3 ;            
+            double cuota = Convert.ToDouble(BoxMonto.Text);
+
+            double subtotal = 1800 - cuota;
+
+            double mensual = subtotal / 3 ;            
 
             double pago = mensual + mensual * 0.05;
 
