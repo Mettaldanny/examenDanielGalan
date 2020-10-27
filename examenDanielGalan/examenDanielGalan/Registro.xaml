@@ -7,7 +7,7 @@
              x:Class="examenDanielGalan.Registro">
     <ContentPage.Content>
         <StackLayout>
-            <Entry =""
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

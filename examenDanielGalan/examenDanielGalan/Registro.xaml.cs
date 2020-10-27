@@ -12,7 +12,7 @@ namespace examenDanielGalan
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Registro : ContentPage
     {
-        public Registro()
+        public Registro(string user, string pass)
         {
             InitializeComponent();
         }

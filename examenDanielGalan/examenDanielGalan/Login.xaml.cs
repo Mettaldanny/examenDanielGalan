@@ -17,5 +17,21 @@ namespace examenDanielGalan
         {
             InitializeComponent();
         }
+
+        private async void btnVentana_Clicked(object sender, EventArgs e)
+        {
+            string user = txtUser.Text;
+            string pass = txtPass.Text;
+
+            if (user.Equals("estudiante2020") && pass.Equals("uisrael2020"))
+            {
+                await Navigation.PushAsync(new Registro(user, pass));
+            }
+            else
+            {
+                DisplayAlert("Error", "Usuario o contraseña incorrectos", "OK");
+            }
+
+        }
     }
 }

@@ -7,10 +7,22 @@
              x:Class="examenDanielGalan.MainPage">
 
     <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+        <Entry x:Name="txtUser"
+               Placeholder="Ingrese el usuario">
+
+        </Entry>
+
+        <Entry x:Name="txtPass"
+               Placeholder="Ingrese la contrasena"
+               IsPassword="True">
+
+        </Entry>
+
+        <Button x:Name="btnVentana"
+                Text="Abrir"
+                Clicked="btnVentana_Clicked">
+
+        </Button>
     </StackLayout>
 
 </ContentPage>
